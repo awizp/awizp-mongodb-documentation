@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    /* custom breakpoint */
+    --breakpoint-xs: 425px;
+
+    /* custom fonts */
+    --font-roboto: "Roboto", sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-lora: "Lora", serif;
+}
+
+@layer custom-scrollbar {
+    body::-webkit-scrollbar {
+        @apply w-1.5 h-1.5 bg-green-50;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        @apply w-1 h-1 bg-green-600 rounded-full;
+    }
+
+    .custom-scroll::-webkit-scrollbar {
+        @apply w-1.5 h-1.5 bg-green-50 rounded-full;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+        @apply w-1 h-1 bg-green-600 rounded-full;
+    }
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-lora;
+    }
+
+    body {
+        @apply bg-green-50/50 font-roboto selection:bg-green-600 selection:text-white;
+    }
+}
+
+@layer utilities {
+    .custom-container {
+        @apply container mx-auto px-3;
+    }
+
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .link {
+        @apply text-green-800 underline;
+    }
+
+    .nav-link {
+        @apply w-full p-1 rounded-lg hover:text-green-600 transition-colors text-left pl-5 text-sm capitalize;
+    }
+
+    .code-block {
+        @apply w-full sm:w-[70%] md:w-[60%] lg:w-[55%] overflow-x-auto mt-5 p-5 rounded-2xl bg-slate-950 text-white text-sm font-semibold font-jetbrains;
+    }
+}
