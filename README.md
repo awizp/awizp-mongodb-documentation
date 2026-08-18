@@ -4,25 +4,6 @@ This repository documents a complete, practical deep-dive into MongoDB executed 
 
 ---
 
-## 📑 Table of Contents
-
-- [Overview](#-overview)
-- [Key Modules Covered](#-key-modules-covered)
-  - [1. CRUD & Query Operators](#1-crud--query-operators)
-  - [2. Aggregation Pipeline Stages](#2-aggregation-pipeline-stages)
-  - [3. Accumulator & Group Operators](#3-accumulator--group-operators)
-  - [4. Arithmetic & Precision Operators](#4-arithmetic--precision-operators)
-  - [5. String Expression Operators](#5-string-expression-operators)
-  - [6. Date & Time Operators (ISO-Compliant)](#6-date--time-operators-iso-compliant)
-  - [7. Array Manipulation & Functional Pipeline](#7-array-manipulation--functional-pipeline)
-  - [8. Conditional & Control Flow Operators](#8-conditional--control-flow-operators)
-  - [9. Type Conversion & Checking](#9-type-conversion--checking)
-  - [10. Capped Collections & Circular Buffers](#10-capped-collections--circular-buffers)
-  - [11. Indexing, Performance & DB Administration](#11-indexing-performance--db-administration)
-- [Tech Stack](#-tech-stack)
-
----
-
 ## 🚀 Overview
 
 This repository contains fully documented, interactive examples designed for developers learning or referencing MongoDB. Built with **React** and **Tailwind CSS**, the UI renders interactive documentation code blocks, practical aggregate queries, real-world schemas, and visual feedback for every command.
