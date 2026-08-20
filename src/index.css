@@ -65,6 +65,6 @@
     }
 
     .code-block {
-        @apply w-full sm:w-[70%] md:w-[60%] lg:w-[55%] overflow-x-auto mt-5 p-5 rounded-2xl bg-slate-950 text-white text-sm font-semibold font-jetbrains;
+        @apply w-full sm:w-[70%] md:w-[60%] lg:w-[55%] overflow-x-auto mt-5 p-5 rounded-2xl bg-green-950 text-white text-sm font-semibold font-jetbrains;
     }
 }
